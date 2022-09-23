@@ -13,6 +13,7 @@ buildDrafts = false
 buildFuture = false
 
 googleAnalytics = "G-J6VP3MEDMK"
+disqusShortname = "techbis5net"
 
 [sitemap]
   changefreq = 'daily'

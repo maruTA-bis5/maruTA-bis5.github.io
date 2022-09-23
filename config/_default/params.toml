@@ -44,6 +44,7 @@ enableCodeCopy = true
   showWordCount = true
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "whatsapp", "pinterest", "reddit", "facebook", "email"]
+  showComments = true
 
 [list]
   showBreadcrumbs = false
