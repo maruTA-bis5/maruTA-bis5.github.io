@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run --rm \
 	-u `id -u`:`id -g` \
-	-v $PWD:/src \
+	-v $PWD:/home/circleci/project \
 	-p 1313:1313 \
-	klakegg/hugo:0.101.0-ext-alpine $@
+	cibuilds/hugo:0.102.3 hugo $@
