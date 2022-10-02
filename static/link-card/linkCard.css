@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+div.link-card {
+	font-family: sans-serif;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: #d0d0d0;
+	margin-top: 1em;
+	padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+div.link-card > .link-card-site-name {
+    opacity: .8;
+}
+
+div.link-card > .link-card-title {
+	font-weight: bold;
+}
+
+div.link-card > .link-card-desc {
+	font-size: 0.75em;
+}
+
+.link-card-container {
+    display: flex;
+}
+
+.link-card-container > img {
+    width: 120px;
+    object-fit: contain;
+}
+
+.link-card-text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

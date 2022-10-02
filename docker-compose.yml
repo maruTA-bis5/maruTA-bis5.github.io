@@ -1,0 +1,25 @@
+version: "3"
+services:
+  hugo:
+    image: cibuilds/hugo:0.102.3
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - "$PWD:/home/circleci/project"
+    environment:
+      HUGO_OGP_SERVICE: "http://localhost:9000/api/ogp"
+    entrypoint: hugo server -D --bind 0.0.0.0
+    ports:
+      - "1313:1313"
+    networks:
+      - hugo
+  ogp:
+    build: tools/ogpfunction
+    ports:
+      - "9000:80"
+    # environment:
+    #   CORS: "*"
+    networks:
+      - hugo
+networks:
+  hugo:
+    driver: bridge

@@ -1,0 +1,5 @@
+{{ $url := .Get 0 }}
+{{ $text := .Get 1 }}
+{{ $ogpService := print (getenv "HUGO_OGP_SERVICE") }}
+<a class="createCard" href="{{ $url | safeURL }}">{{ $text }}</a>
+<script>ogpService = '{{ $ogpService | safeJS }}';</script>
