@@ -33,7 +33,7 @@ func main() {
 
 	e.GET("/api/ogp", getOGPHandler)
 
-	port := getenv("PORT", getenv("FUNCTIONS_CUSTOMHANDLER_PORT", "9000"))
+	port := getenv("FUNCTIONS_CUSTOMHANDLER_PORT", getenv("PORT", "9000"))
 	e.Logger.Fatal(e.Start(":" + port))
 }
 
