@@ -48,6 +48,7 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          HUGO_OGP_SERVICE: ${{secrets.HUGO_OGP_SERVICE}}
         run: |
           hugo \
             --minify \
