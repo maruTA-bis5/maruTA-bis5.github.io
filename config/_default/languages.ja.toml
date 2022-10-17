@@ -13,10 +13,10 @@ title = "tech.bis5.net"
 dateFormat = "2006-01-02"
 
 [author]
-  name = "maruTA"
-  image = "img/blowfish_logo.png"
-  headline = "I'm only human"
-  bio = "A little bit about you"
+  name = "maruTA / Takayuki MARUYAMA"
+  image = "profile.png"
+  #headline = "I'm only human"
+  #bio = "A little bit about you"
   links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
