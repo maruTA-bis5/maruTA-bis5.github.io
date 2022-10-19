@@ -8,7 +8,7 @@ RUN CGO_ENABLED=0 go build -o bin/ogp main.go
 
 FROM mcr.microsoft.com/azure-functions/dotnet:4-slim
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
-    AzureFunctionsJobHost__Logging__Console__IsEnabled=true
+    AzureFunctionsJobHost__Logging__Console__IsEnabled=false
 
 COPY ./*.json /home/site/wwwroot/
 COPY ./link-card-api/ /home/site/wwwroot/link-card-api/

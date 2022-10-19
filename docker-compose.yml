@@ -16,8 +16,8 @@ services:
     build: tools/ogpfunction
     ports:
       - "9000:80"
-    # environment:
-    #   CORS: "*"
+    environment:
+      AzureFunctionsJobHost__Logging__Console__IsEnabled: "true"
     networks:
       - hugo
 networks:
