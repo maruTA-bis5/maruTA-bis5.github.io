@@ -22,10 +22,10 @@ WildFlyを起動する際に使用するVM引数はJBoss Toolsにハードコー
 
 業務開発だと512MBはあっという間に`OutOfMemoryError`を引き起こしてしまうので、割当を増やしておきましょう。
 1. Serversビューから、対象のWildFlyをダブルクリック
-    ![wildfly-vm-args-1.png](https://tech.bis5.net/wp-content/uploads/2022/10/wildfly-vm-args-1.png)
+    ![wildfly-vm-args-1.png](./wildfly-vm-args-1.png)
 2. 出てきたビューの`Open launch configuration`リンクをクリック
-    ![wildfly-vm-args-2.png](https://tech.bis5.net/wp-content/uploads/2022/10/wildfly-vm-args-2.png)
+    ![wildfly-vm-args-2.png](./wildfly-vm-args-2.png)
 3. `VM Arguments`を編集して、OK
-    ![wildfly-vm-args-3.png](https://tech.bis5.net/wp-content/uploads/2022/10/wildfly-vm-args-3.png)
+    ![wildfly-vm-args-3.png](./wildfly-vm-args-3.png)
 
 これでOK。起動すれば変更した引数が起動時に渡されるので、例えば`-Xmx2g`と指定すれば2GBの最大ヒープ・サイズを指定できます。
