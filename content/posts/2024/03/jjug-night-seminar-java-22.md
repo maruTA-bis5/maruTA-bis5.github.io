@@ -15,6 +15,10 @@ tags:
 
 多分資料と合わせて見るかJEPと付き合わせないと自分でも思い出せなくなる気がするけど、まだ資料は公開されていないかな? 時期に公開されると思うのでそのときにリンク追記します。
 
+※2024/04/01 20:39追記: 資料が公開されました
+
+{{<linkCard "https://speakerdeck.com/lycorptech_jp/20240327_jjug_java22" "Head toward Java 22 and Java 23 - Speaker Deck">}}
+
 セッション登壇された久保田([@sugarlife](https://twitter.com/sugarlife/with_replies))さん、運営スタッフの皆さん、ありがとうございました。
 
 ## JEPs in JDK 22
