@@ -1,6 +1,6 @@
 FROM golang:1.20-alpine AS builder
 WORKDIR /src/github.com/maruTA-bis5/maruTA-bis5.github.io/tools/ogpfunction/
-ADD . /src/github.com/maruTA-bis5/maruTA-bis5.github.io/tools/ogpfunction/
+COPY . /src/github.com/maruTA-bis5/maruTA-bis5.github.io/tools/ogpfunction/
 RUN go mod tidy
 # make portable binary
 # https://okzk.hatenablog.com/entry/2016/08/03/234738
