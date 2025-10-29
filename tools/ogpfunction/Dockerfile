@@ -6,7 +6,7 @@ RUN go mod tidy
 # https://okzk.hatenablog.com/entry/2016/08/03/234738
 RUN CGO_ENABLED=0 go build -o bin/ogp main.go
 
-FROM mcr.microsoft.com/azure-functions/dotnet:4-slim
+FROM mcr.microsoft.com/azure-functions/base:4
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
     AzureFunctionsJobHost__Logging__Console__IsEnabled=false
 
